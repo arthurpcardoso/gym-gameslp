@@ -15,13 +15,13 @@ import {
     return (
       <Card color="transparent" shadow={false}>
         <CardBody className="grid justify-start">
-          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
+          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-primary p-2.5 text-left text-white">
             <Icon className="h-6 w-6" />
           </div>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
+          <Typography variant="h5" className="mb-2 text-primary">
             {title}
           </Typography>
-          <Typography className=" font-normal !text-gray-500">
+          <Typography className=" font-normal !text-primary">
             {children}
           </Typography>
         </CardBody>

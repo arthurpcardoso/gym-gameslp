@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import logo from "../../public/logos/logosemfundo.svg";
+import logo from "../../public/logos/Logo com nome.svg";
 
 interface NavItemProps {
   children: React.ReactNode;

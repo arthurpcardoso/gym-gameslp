@@ -22,7 +22,7 @@ export function Footer() {
               Gym Games
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              The reward for getting on the stage is fame.
+              Participe de competições divertidas, acompanhe seu progresso e alcance suas metas junto com seu grupo
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
             <Typography variant="h6" color="white" className="mb-3">
-              Get the app
+              Baixe o app
             </Typography>
             <div className="flex flex-col gap-2">
               <Button

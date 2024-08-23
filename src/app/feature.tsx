@@ -4,38 +4,38 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
+  CameraIcon,
+  UserGroupIcon,
+  TrophyIcon,
+  NewspaperIcon
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "../components/feature-card";
 
 const FEATURES = [
   {
-    icon: CursorArrowRaysIcon,
-    title: "Expert Instructors",
+    icon: UserGroupIcon,
+    title: "Comunidades",
     children:
-      "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+      "O Gym Games é um app em que você pode entrar em comunidades e formar equipes dentro delas. Nessas comunidades, vocês competem para ver quem é mais constante nos exercícios.",
   },
   {
-    icon: HeartIcon,
-    title: "Interactive Learning",
+    icon: CameraIcon,
+    title: "Postar",
     children:
-      "Engage with interactive quizzes, hands-on exercises, and discussion forums to reinforce your understanding and connect.",
+      "Postando uma foto você acumula pontos que contribuem para sua pontuação individual e de equipe",
   },
   {
-    icon: LockClosedIcon,
-    title: "Achievement Unlocked",
+    icon: NewspaperIcon,
+    title: "Feed",
     children:
-      "Earn certificates and badges as you complete courses, showcasing your newfound skills to the world.",
+      "Pelo feed você consegue acompanhar os seus companheiros e interagir com suas fotos",
   },
   {
-    icon: LightBulbIcon,
-    title: "Personalized Progress Tracking",
+    icon: TrophyIcon,
+    title: "Ranking",
     children:
-      "Stay on top of your learning journey with progress tracking and personalized recommendations to keep you motivated.",
+      "Pelo ranking você consegue acompanhar quem está a frente na competição de equipes e individual. É preciso atingir as metas para vencer!",
   },
 ];
 
@@ -43,19 +43,18 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          Your Learning App
+        <Typography className="mb-2 font-bold uppercase text-primary">
+          Sua rede social de exercícios
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
-          Diverse Learning Resources
+        <Typography variant="h1" className="mb-4 text-primary">
+          Use o Gym games para aumentar a motivação do seu grupo!
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
+          className="mx-auto w-full px-4 !text-primary lg:w-11/12 lg:px-8 "
         >
-          Access your learning materials on the go. Whether you&apos;re
-          commuting, waiting for a friend, or just have a few minutes to spare,
-          our app fits seamlessly into your busy life.
+          Participe de competições emocionantes, acompanhe o progresso de todos e conquiste suas metas de forma divertida e colaborativa. 
+          Transforme o treino em um jogo e torne a jornada fitness ainda mais empolgante com seus amigos!
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
