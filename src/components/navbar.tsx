@@ -9,6 +9,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import logo from "../../public/logos/Logo com nome.svg";
+import logo_branca from "../../public/logos/logofundobranco.svg";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -71,7 +72,7 @@ export function Navbar() {
         <Image
           width={72}
           height={72}
-          src={logo}
+          src={isScrolling ? logo_branca : logo}
           alt="metamask"
         />
         <ul
@@ -79,11 +80,11 @@ export function Navbar() {
             isScrolling ? "text-primary" : "text-white"
           }`}
         >
-          <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
-          <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
+          <NavItem>Início</NavItem>
+          <NavItem>Funcionalidades</NavItem>
+          <NavItem>Contato</NavItem>
+          <NavItem>
+            FAQ
           </NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
@@ -133,21 +134,15 @@ export function Navbar() {
             <NavItem>Início</NavItem>
             <NavItem>Funcionalidades</NavItem>
             <NavItem>Contato</NavItem>
-            <NavItem href="https://www.material-tailwind.com/docs/react/installation">
+            <NavItem>
               FAQ
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
             <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            <a target="_blank">
               <Button color="gray" size="sm" className="ml-auto">
                 Baixar
               </Button>
