@@ -27,6 +27,10 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
+                onClick={() => {
+                  window.open("https://apps.apple.com/br/app/gymgames/id6572282354", "_blank");
+                }
+                }
               >
                 <Image
                   width={256}
@@ -41,6 +45,10 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
+                onClick={() => {
+                  window.open("https://play.google.com/store/apps/details?id=com.focafit.app", "_blank");
+                }
+                }
               >
                 <Image
                   width={256}
@@ -56,9 +64,9 @@ function Hero() {
           <Image
             width={470}
             height={576}
-            src="/image/iphones.png"
+            src="/image/Hero.png"
             alt="team work"
-            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[30rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0 object-contain"
           />
         </div>
       </header>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = ["About Us", "Careers", "Press", "Blog", "Pricing"];
+const LINKS = ["Inicio", "Contato", "Funcionalidades", "Blog", "Pricing"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -24,22 +24,6 @@ export function Footer() {
             <Typography color="white" className="mb-12 font-normal">
               Participe de competições divertidas, acompanhe seu progresso e alcance suas metas junto com seu grupo
             </Typography>
-            <ul className="flex flex-wrap items-center justify-center md:justify-start">
-              {LINKS.map((link, idx) => (
-                <li key={link}>
-                  <Typography
-                    as="a"
-                    href="#"
-                    color="white"
-                    className={`py-1 font-medium transition-colors ${
-                      idx === 0 ? "pr-3" : "px-3"
-                    }`}
-                  >
-                    {link}
-                  </Typography>
-                </li>
-              ))}
-            </ul>
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
             <Typography variant="h6" color="white" className="mb-3">

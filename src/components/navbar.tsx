@@ -109,9 +109,9 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
+          <a href="https://linktr.ee/gymgames?fbclid=PAZXh0bgNhZW0CMTEAAabE3ZEhJ_a_4MuXx-cQd9cA2L3-ILKPCP6yCDfGnuzkTJsuHvqbOLOzJR4_aem_ykyT34cCHUy3kuSYxMvQfA" target="_blank">
             <Button color={isScrolling ? "gray" : "white"} size="sm">
-              Blocks
+              Baixar
             </Button>
           </a>
         </div>
@@ -142,7 +142,7 @@ export function Navbar() {
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a target="_blank">
+            <a href="https://linktr.ee/gymgames?fbclid=PAZXh0bgNhZW0CMTEAAabE3ZEhJ_a_4MuXx-cQd9cA2L3-ILKPCP6yCDfGnuzkTJsuHvqbOLOzJR4_aem_ykyT34cCHUy3kuSYxMvQfA" target="_blank">
               <Button color="gray" size="sm" className="ml-auto">
                 Baixar
               </Button>
